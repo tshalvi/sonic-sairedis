@@ -257,7 +257,7 @@ config_syncd_mlnx()
         cat /tmp/sai_extra.profile >> /tmp/sai.profile
     fi
 
-    # Ensure no extra newlines or whitespace
+    # Ensure no redundant newlines
     sed -i '/^$/d' /tmp/sai.profile
 }
 
